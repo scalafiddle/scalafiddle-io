@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration scan="true" scanPeriod="60 seconds">
+    <jmxConfigurator />
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+       <encoder class="net.logstash.logback.encoder.LogstashEncoder">
+           <includeContext>true</includeContext>
+       </encoder>
+    </appender>
+
+    <root level="DEBUG">
+        <appender-ref ref="CONSOLE" />
+    </root>
+
+    <logger name="akka" level="INFO" />
+    <logger name="scalafiddle" level="DEBUG" />
+
+</configuration>

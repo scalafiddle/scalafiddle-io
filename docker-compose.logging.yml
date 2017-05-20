@@ -1,0 +1,40 @@
+version: '3'
+services:
+  elasticsearch:
+    build: logging/elasticsearch/
+    container_name: elasticsearch
+    restart: always
+    volumes:
+      - ./logging/elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
+      - logvolume:/usr/share/elasticsearch/data
+    ports:
+      - "9200:9200"
+    environment:
+      ES_JAVA_OPTS: "-Xmx1g -Xms1g"
+
+  logstash:
+    build: logging/logstash/
+    container_name: logstash
+    restart: always
+    volumes:
+      - ./logging/logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml
+      - ./logging/logstash/pipeline:/usr/share/logstash/pipeline
+    environment:
+      LS_JAVA_OPTS: "-Xmx1g -Xms1g"
+    ports:
+      - "5000:5000/udp"
+    depends_on:
+      - elasticsearch
+
+  kibana:
+    build: logging/kibana/
+    container_name: kibana
+    volumes:
+      - ./logging/kibana/config/:/usr/share/kibana/config
+    ports:
+      - "5611:5601"
+    depends_on:
+      - elasticsearch
+
+volumes:
+  logvolume:

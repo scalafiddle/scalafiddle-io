@@ -1,0 +1,10 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:9.6
+    container_name: postgres
+    volumes:
+      - sfdata:/data
+    environment:
+      - PGDATA=/data/postgres
+      - POSTGRES_PASSWORD

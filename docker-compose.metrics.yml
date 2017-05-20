@@ -1,0 +1,13 @@
+version: '3'
+services:
+  metrics:
+    build: metrics/
+    container_name: metrics
+    ports:
+      - "8060:80"
+      - "8061:81"
+    volumes:
+      - metrics:/data
+
+volumes:
+  metrics:

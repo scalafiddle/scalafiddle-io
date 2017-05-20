@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration scan="true" scanPeriod="60 seconds">
+    <jmxConfigurator />
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+       <encoder class="net.logstash.logback.encoder.LogstashEncoder">
+           <includeContext>true</includeContext>
+       </encoder>
+    </appender>
+
+    <root level="DEBUG">
+        <appender-ref ref="CONSOLE" />
+    </root>
+
+    <logger name="sun" level="WARN" />
+    <logger name="javax" level="WARN" />
+    <logger name="akka.cluster" level="INFO" />
+    <logger name="io.netty" level="WARN" />
+    <logger name="akka" level="INFO" />
+    <logger name="akka.http" level="INFO" />
+    <logger name="com.mohiva" level="WARN" />
+    <logger name="slick" level="INFO" />
+    <logger name="slick.compiler" level="INFO" />
+    <logger name="com.zaxxer.hikari" level="INFO" />
+    <logger name="com.google.inject" level="INFO" />
+    <logger name="org.asynchttpclient" level="INFO" />
+    <logger name="scalafiddle" level="DEBUG" />
+
+</configuration>
