@@ -5,10 +5,11 @@ services:
     container_name: elasticsearch
     restart: always
     volumes:
-      - ./logging/elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
       - logvolume:/usr/share/elasticsearch/data
-    ports:
-      - "9200:9200"
+      - ./logging/elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
+    # Enable for direct access to ES
+    # ports:
+    #   - "9200:9200"
     environment:
       ES_JAVA_OPTS: "-Xmx1g -Xms1g"
 
@@ -20,7 +21,7 @@ services:
       - ./logging/logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml
       - ./logging/logstash/pipeline:/usr/share/logstash/pipeline
     environment:
-      LS_JAVA_OPTS: "-Xmx1g -Xms1g"
+      LS_JAVA_OPTS: "-Xmx256m -Xms256m"
     ports:
       - "5000:5000/udp"
     depends_on:

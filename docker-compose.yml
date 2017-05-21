@@ -1,7 +1,7 @@
 version: '3'
 services:
   editor:
-    image: scalafiddle/scalafiddle-editor
+    image: scalafiddle/scalafiddle-editor:latest
     restart: always
     container_name: editor
     volumes:
@@ -21,13 +21,14 @@ services:
       - GITHUB_CLIENT_SECRET
       - SCALAFIDDLE_AUTH_URL=https://scalafiddle.io/authenticate
       - SCALAFIDDLE_LIBRARIES_URL=https://raw.githubusercontent.com/scalafiddle/scalafiddle-editor/master/server/src/main/resources/libraries.json
+      - SCALAFIDDLE_METRICS_STATSD_HOSTNAME=metrics
     logging:
       driver: gelf
       options:
         gelf-address: "udp://localhost:5000"
       
   router:
-    image: scalafiddle/scalafiddle-router
+    image: scalafiddle/scalafiddle-router:latest
     depends_on:
       - editor
     restart: always
@@ -41,16 +42,17 @@ services:
       - JAVA_OPTS=-Xmx1G
       - SCALAFIDDLE_LIBRARIES_URL=http://editor:9000/libraries/2.11
       - SCALAFIDDLE_CACHE_DIR=/data/router/cache
-      - SCALAFIDDLE_SOURCE_URL=https://scalafiddle.io/raw/
-      - SCALAFIDDLE_EDIT_URL=https://scalafiddle.io/
+      - SCALAFIDDLE_SOURCE_URL=http://localhost:9000/raw/
+      - SCALAFIDDLE_EDIT_URL=http://localhost:9000/
       - SCALAFIDDLE_METRICS_STATSD_HOSTNAME=metrics
+      - SCALAFIDDLE_SECRET
     logging:
       driver: gelf
       options:
         gelf-address: "udp://localhost:5000"
       
   compiler:
-    image: scalafiddle/scalafiddle-core
+    image: scalafiddle/scalafiddle-core:latest
     depends_on:
       - router
     restart: always
@@ -63,6 +65,7 @@ services:
       - COURSIER_CACHE=/data/compiler/coursier
       - SCALAFIDDLE_LIBCACHE=/data/compiler/extlibs
       - SCALAFIDDLE_METRICS_STATSD_HOSTNAME=metrics
+      - SCALAFIDDLE_SECRET
     logging:
       driver: gelf
       options:
