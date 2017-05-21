@@ -2,7 +2,7 @@ version: '3'
 services:
   editor:
     environment:
-      - SCALAFIDDLE_SQL_URL=jdbc:postgresql://localhost/scalafiddle
+      - SCALAFIDDLE_SQL_URL=jdbc:postgresql://${POSTGRES_SERVER}/scalafiddle
       - SCALAFIDDLE_COMPILER_URL=https://embed.scalafiddle.io
       - SCALAFIDDLE_AUTH_URL=https://scalafiddle.io/authenticate
       
@@ -10,6 +10,3 @@ services:
     environment:
       - SCALAFIDDLE_SOURCE_URL=https://scalafiddle.io/raw/
       - SCALAFIDDLE_EDIT_URL=https://scalafiddle.io/
-      
-  compiler:
-    environment:
