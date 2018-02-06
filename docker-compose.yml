@@ -21,7 +21,7 @@ services:
       - GITHUB_CLIENT_ID
       - GITHUB_CLIENT_SECRET
       - SCALAFIDDLE_AUTH_URL=https://scalafiddle.io/authenticate
-      - SCALAFIDDLE_LIBRARIES_URL=https://raw.githubusercontent.com/scalafiddle/scalafiddle-editor/master/server/src/main/resources/libraries.json
+      - SCALAFIDDLE_LIBRARIES_URL=https://raw.githubusercontent.com/scalafiddle/scalafiddle-io/master/libraries.json
       - SCALAFIDDLE_METRICS_STATSD_HOSTNAME=metrics
     logging:
       driver: gelf
@@ -41,7 +41,7 @@ services:
       - "8888:8880"
     environment:
       - JAVA_OPTS=-Xmx1G
-      - 'SCALAFIDDLE_LIBRARIES_URL={"2.11": "http://editor:9000/libraries/2.11","2.12": "http://editor:9000/libraries/2.12"}'
+      - SCALAFIDDLE_LIBRARIES_URL=https://raw.githubusercontent.com/scalafiddle/scalafiddle-io/master/libraries.json
       - SCALAFIDDLE_CACHE_DIR=/data/router/cache
       - SCALAFIDDLE_SOURCE_URL=http://editor:9000/raw/
       - SCALAFIDDLE_EDIT_URL=http://editor:9000/
