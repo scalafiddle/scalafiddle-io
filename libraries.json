@@ -618,6 +618,20 @@
           }
         ],
         "compileTimeOnly": false
+      },
+      {
+        "name": "Play JSON codecs",
+        "organization": "org.julienrf",
+        "artifact": "play-json-derived-codecs",
+        "doc": "https://github.com/julienrf/play-json-derived-codecs",
+        "versions": [
+          {
+            "version": "4.0.0",
+            "scalaVersions": ["2.11", "2.12"],
+            "extraDeps": ["org.julienrf %%% play-json-derived-codecs % 4.0.0"]
+          }
+        ],
+        "compileTimeOnly": false
       }
     ]
   },
