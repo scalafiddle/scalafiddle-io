@@ -692,6 +692,10 @@
         "doc": "akka-js/akka.js",
         "versions": [
           {
+            "version": "1.2.5.11",
+            "scalaVersions": ["2.11", "2.12"]
+          },
+          {
             "version": "1.2.5.9",
             "scalaVersions": ["2.11", "2.12"]
           },
@@ -747,6 +751,10 @@
         "doc": "akka-js/akka.js",
         "versions": [
           {
+            "version": "1.2.5.11",
+            "scalaVersions": ["2.11", "2.12"]
+          },
+          {
             "version": "1.2.5.9",
             "scalaVersions": ["2.11", "2.12"]
           },
@@ -801,6 +809,10 @@
         "artifact": "akkajsactortyped",
         "doc": "akka-js/akka.js",
         "versions": [
+          {
+            "version": "1.2.5.11",
+            "scalaVersions": ["2.11", "2.12"]
+          },
           {
             "version": "1.2.5.9",
             "scalaVersions": ["2.11", "2.12"]
