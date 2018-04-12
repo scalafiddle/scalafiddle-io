@@ -11,7 +11,7 @@ services:
     # ports:
     #   - "9200:9200"
     environment:
-      ES_JAVA_OPTS: "-Xmx1g -Xms1g"
+      ES_JAVA_OPTS: "-Xmx2g -Xms1g"
 
   logstash:
     build: logging/logstash/

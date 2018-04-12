@@ -10,3 +10,4 @@ services:
     environment:
       - SCALAFIDDLE_SOURCE_URL=https://scalafiddle.io/raw/
       - SCALAFIDDLE_EDIT_URL=https://scalafiddle.io/
+      - SCALAFIDDLE_EMBED_URL=https://embed.scalafiddle.io/
