@@ -3,6 +3,61 @@
     "group": "Web",
     "libraries": [
       {
+        "name": "Scala.js React",
+        "organization": "com.github.japgolly.scalajs-react",
+        "artifact": "core",
+        "doc": "japgolly/scalajs-react",
+        "versions": [
+          {
+            "version": "1.2.0",
+            "scalaVersions": ["2.11", "2.12"],
+            "extraDeps": [
+              "com.github.japgolly.scalajs-react %%% extra % 1.2.0"
+            ],
+            "jsDeps": [
+              "react % 16.3.0 % https://cdnjs.cloudflare.com/ajax/libs/react/16.3.0/umd/react.development.js",
+              "react-dom % 16.3.0 % https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.3.0/umd/react-dom.development.js"
+            ],
+			"example":"https://raw.githubusercontent.com/scalafiddle/scalafiddle-io/master/samples/scalajs-react/1.2/todo.scala"
+          },
+          {
+            "version": "1.1.1",
+            "scalaVersions": ["2.11", "2.12"],
+            "extraDeps": [
+              "com.github.japgolly.scalajs-react %%% extra % 1.1.1"
+            ],
+            "jsDeps": [
+              "react % 15.6.1 % https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-with-addons.min.js",
+              "react-dom % 15.6.1 % https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.min.js"
+            ],
+			"example":"https://raw.githubusercontent.com/scalafiddle/scalafiddle-io/master/samples/scalajs-react/1.1/todo.scala"
+          }
+        ],
+        "compileTimeOnly": false
+      },
+      {
+        "name": "React Components",
+        "organization": "com.olvind",
+        "artifact": "scalajs-react-components",
+        "doc": "chandu0101/scalajs-react-components",
+        "versions": [
+          {
+            "version": "1.0.0-M2",
+            "scalaVersions": ["2.12"],
+            "extraDeps": [
+            ],
+            "jsDeps": [
+              "react % 15.6.1 % https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-with-addons.min.js",
+              "react-dom % 15.6.1 % https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.min.js"
+            ],
+            "cssDeps": [
+              "semantic-ui % 2.2.4 % https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css"
+            ]
+          }
+        ],
+        "compileTimeOnly": false
+      },
+      {
         "name": "Diode",
         "organization": "io.suzaku",
         "artifact": "diode",
