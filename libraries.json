@@ -3,6 +3,26 @@
     "group": "Web",
     "libraries": [
       {
+        "name": "Slinky",
+        "organization": "me.shadaj",
+        "artifact": "slinky-core",
+        "doc": "https://slinky.shadaj.me",
+        "versions": [
+          {
+            "version": "0.3.2",
+            "scalaVersions": ["2.12"],
+            "extraDeps": [
+              "me.shadaj %%% slinky-web % 0.3.2"
+            ],
+            "jsDeps": [
+              "react % 16.3.0 % https://cdnjs.cloudflare.com/ajax/libs/react/16.3.0/umd/react.development.js",
+              "react-dom % 16.3.0 % https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.3.0/umd/react-dom.development.js"
+            ]
+          }
+        ],
+        "compileTimeOnly": false
+      },
+      {
         "name": "Scala.js React",
         "organization": "com.github.japgolly.scalajs-react",
         "artifact": "core",
