@@ -432,7 +432,11 @@
           {
             "version": "2.5.0",
             "scalaVersions": ["2.11", "2.12"]
-      }
+          },
+	  {
+            "version": "2.6.0",
+            "scalaVersions": ["2.11", "2.12"]
+          }
         ],
         "compileTimeOnly": false
       }
