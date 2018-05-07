@@ -283,6 +283,10 @@
         "doc": "typelevel/cats-effect",
         "versions": [
           {
+            "version": "1.0.0-RC",
+            "scalaVersions": ["2.11", "2.12"]
+          },
+          {
             "version": "0.5",
             "scalaVersions": ["2.11", "2.12"]
           },
