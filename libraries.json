@@ -428,13 +428,13 @@
         "organization": "io.github.scala-hamsters",
         "artifact": "hamsters",
         "doc": "scala-hamsters/hamsters",
-        "versions": [
-          {
-            "version": "2.5.0",
-            "scalaVersions": ["2.11", "2.12"]
-          },
+        "versions": [          
 	  {
             "version": "2.6.0",
+            "scalaVersions": ["2.11", "2.12"]
+          },
+          {
+            "version": "2.5.0",
             "scalaVersions": ["2.11", "2.12"]
           }
         ],
