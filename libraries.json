@@ -633,6 +633,10 @@
         "artifact": "upickle",
         "doc": "lihaoyi/upickle",
         "versions": [
+	  {
+            "version": "0.6.6",
+            "scalaVersions": ["2.11", "2.12"]
+          },
           {
             "version": "0.5.1",
             "scalaVersions": ["2.11", "2.12"]
