@@ -9,10 +9,10 @@
         "doc": "https://slinky.shadaj.me",
         "versions": [
           {
-            "version": "0.4.2",
+            "version": "0.4.3",
             "scalaVersions": ["2.12"],
             "extraDeps": [
-              "me.shadaj %%% slinky-web % 0.4.2"
+              "me.shadaj %%% slinky-web % 0.4.3"
             ],
             "jsDeps": [
               "react % 16.3.2 % https://cdnjs.cloudflare.com/ajax/libs/react/16.3.0/umd/react.development.js",
