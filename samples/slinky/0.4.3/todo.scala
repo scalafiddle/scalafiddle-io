@@ -5,8 +5,14 @@ import scalajs.js
 object ScalaFiddle {
   // $FiddleStart
   import slinky.core._
+  
   import slinky.web.html._
+  import slinky.web.ReactDOM
+  
   import scala.scalajs.js
+  import scala.scalajs.js.annotation.ScalaJSDefined
+  
+  import scala.scalajs.js.Date
   import org.scalajs.dom.raw.{Event, HTMLInputElement}
   
   case class TodoItem(text: String, id: Long)
@@ -14,6 +20,7 @@ object ScalaFiddle {
   object TodoList extends StatelessComponentWrapper {
     case class Props(items: Seq[TodoItem])
 
+    @ScalaJSDefined
     class Def(jsProps: js.Object) extends Definition(jsProps) {
       override def render() = {
         ul(props.items.map { item =>
@@ -27,6 +34,7 @@ object ScalaFiddle {
     type Props = Unit
     case class State(items: Seq[TodoItem], text: String)
 
+    @ScalaJSDefined
     class Def(jsProps: js.Object) extends Definition(jsProps) {
       override def initialState = State(Seq.empty, "")
 
