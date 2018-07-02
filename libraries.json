@@ -139,34 +139,8 @@
         "name": "Udash",
         "organization": "io.udash",
         "artifact": "udash-core-frontend",
-        "doc": "https://udash.io",
+        "doc": "http://udash.io",
         "versions": [
-          {
-            "version": "0.7.0",
-            "scalaVersions": ["2.11", "2.12"],
-            "extraDeps": [
-              "io.udash %%% udash-auth-frontend % 0.7.0",
-              "io.udash %%% udash-bootstrap % 0.7.0",
-              "io.udash %%% udash-charts % 0.7.0",
-              "io.udash %%% udash-css-frontend % 0.7.0",
-              "io.udash %%% udash-i18n-frontend % 0.7.0",
-              "io.udash %%% udash-rpc-frontend % 0.7.0",
-              "io.udash %%% udash-rest-shared % 0.7.0"
-            ],
-            "jsDeps": [
-              "bootstrap % 3.3.7 % https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js",
-	      "jquery % 3.3.1 % https://code.jquery.com/jquery-3.3.1.min.js",
-	      "highcharts % 5.0.10 % https://code.highcharts.com/5.0.10/highcharts.js",
-	      "highcharts-3d % 5.0.10 % https://code.highcharts.com/5.0.10/highcharts-3d.js",
-	      "highcharts-more % 5.0.10 % https://code.highcharts.com/5.0.10/highcharts-more.js",
-	      "highcharts-exporting % 5.0.10 % https://code.highcharts.com/5.0.10/modules/exporting.js",
-	      "highcharts-drilldown % 5.0.10 % https://code.highcharts.com/5.0.10/modules/drilldown.js",
-	      "highcharts-heatmap % 5.0.10 % https://code.highcharts.com/5.0.10/modules/heatmap.js",
-            ],
-            "cssDeps": [
-              "bootstrap % 3.3.7 % https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-            ]
-          },
           {
             "version": "0.6.0",
             "scalaVersions": ["2.11", "2.12"],
