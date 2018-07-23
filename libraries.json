@@ -501,6 +501,19 @@
         "compileTimeOnly": false
       },
       {
+        "name": "reactify",
+        "organization": "com.outr",
+        "artifact": "reactify",
+        "doc": "outr/reactify",
+        "versions": [
+          {
+            "version": "3.0.2",
+            "scalaVersions": ["2.11", "2.12"]
+          }
+        ],
+        "compileTimeOnly": false
+      },
+      {
         "name": "OutWatch",
         "organization": "io.github.outwatch",
         "artifact": "outwatch",
