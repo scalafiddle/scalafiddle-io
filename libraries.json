@@ -784,6 +784,10 @@
         "doc": "akka-js/akka.js",
         "versions": [
           {
+            "version": "1.2.5.14",
+            "scalaVersions": ["2.11", "2.12"]
+          },
+          {
             "version": "1.2.5.11",
             "scalaVersions": ["2.11", "2.12"]
           },
@@ -842,6 +846,10 @@
         "artifact": "akkajsactorstream",
         "doc": "akka-js/akka.js",
         "versions": [
+          {
+            "version": "1.2.5.14",
+            "scalaVersions": ["2.11", "2.12"]
+          },
           {
             "version": "1.2.5.11",
             "scalaVersions": ["2.11", "2.12"]
@@ -902,11 +910,28 @@
         "doc": "akka-js/akka.js",
         "versions": [
           {
+            "version": "1.2.5.14",
+            "scalaVersions": ["2.11", "2.12"]
+          },
+          {
             "version": "1.2.5.11",
             "scalaVersions": ["2.11", "2.12"]
           },
           {
             "version": "1.2.5.9",
+            "scalaVersions": ["2.11", "2.12"]
+          }
+        ],
+        "compileTimeOnly": false
+      },
+      {
+        "name": "AkkaStreamTyped.Js",
+        "organization": "org.akka-js",
+        "artifact": "akkajsactorstreamtyped",
+        "doc": "akka-js/akka.js",
+        "versions": [
+          {
+            "version": "1.2.5.14",
             "scalaVersions": ["2.11", "2.12"]
           }
         ],
