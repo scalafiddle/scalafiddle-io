@@ -501,7 +501,7 @@
         "compileTimeOnly": false
       },
       {
-        "name": "reactify",
+        "name": "Reactify",
         "organization": "com.outr",
         "artifact": "reactify",
         "doc": "outr/reactify",
