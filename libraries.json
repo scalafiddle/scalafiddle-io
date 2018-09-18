@@ -1092,18 +1092,9 @@
           {
             "version": "2.1.7",
             "scalaVersions": ["2.12"]
-          }
-        ],
-        "compileTimeOnly": false
-      },
-      {
-        "name": "Scalafix",
-        "organization": "ch.epfl.scala",
-        "artifact": "scalafix-core",
-        "doc": "https://scalacenter.github.io/scalafix/",
-        "versions": [
+          },
           {
-            "version": "0.5.10",
+            "version": "4.0.0-RC1",
             "scalaVersions": ["2.12"]
           }
         ],
@@ -1117,6 +1108,10 @@
         "versions": [
           {
             "version": "1.4.0",
+            "scalaVersions": ["2.12"]
+          },
+          {
+            "version": "1.5.1",
             "scalaVersions": ["2.12"]
           }
         ],
