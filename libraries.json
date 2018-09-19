@@ -1087,7 +1087,7 @@
         "name": "Scalameta",
         "organization": "org.scalameta",
         "artifact": "scalameta",
-        "doc": "http://scalameta.org/tutorial/",
+        "doc": "http://scalameta.org",
         "versions": [
           {
             "version": "2.1.7",
