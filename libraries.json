@@ -9,6 +9,18 @@
         "doc": "https://slinky.shadaj.me",
         "versions": [
           {
+            "version": "0.5.0",
+            "scalaVersions": ["2.12"],
+            "extraDeps": [
+              "me.shadaj %%% slinky-web % 0.5.0"
+            ],
+            "jsDeps": [
+              "react % 16.4.2 % https://cdnjs.cloudflare.com/ajax/libs/react/16.4.2/umd/react.development.js",
+              "react-dom % 16.4.2 % https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.2/umd/react-dom.development.js"
+            ],
+            "example":"https://raw.githubusercontent.com/scalafiddle/scalafiddle-io/master/samples/slinky/0.4.3/todo.scala"
+          },
+          {
             "version": "0.4.3",
             "scalaVersions": ["2.12"],
             "extraDeps": [
