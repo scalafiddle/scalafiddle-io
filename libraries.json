@@ -393,6 +393,19 @@
         ],
         "compileTimeOnly": false
       },
+      {	
+        "name": "Cats MTL",	
+        "organization": "org.typelevel",	
+        "artifact": "cats-mtl-core",	
+        "doc": "typelevel/cats-mtl",	
+        "versions": [	
+          {	
+            "version": "0.4.0",	
+            "scalaVersions": ["2.11", "2.12"]	
+          }	
+        ],	
+        "compileTimeOnly": false	
+      },
       {
         "name": "Scalaz",
         "organization": "org.scalaz",
