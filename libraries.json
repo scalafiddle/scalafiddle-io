@@ -497,6 +497,10 @@
         "doc": "https://monix.io/",
         "versions": [
           {
+            "version": "3.0.0-RC2",
+            "scalaVersions": ["2.11", "2.12"]
+          },
+          {
             "version": "3.0.0-M1",
             "scalaVersions": ["2.11", "2.12"]
           },
