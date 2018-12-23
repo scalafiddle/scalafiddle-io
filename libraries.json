@@ -1167,7 +1167,20 @@
           }
         ],
         "compileTimeOnly": false
-      },    
+      },
+      {
+        "name": "sttp",
+        "organization": "com.softwaremill.sttp",
+        "artifact": "core",
+        "doc": "https://sttp.readthedocs.io/en/latest/",
+        "versions": [
+          {
+            "version": "1.5.2",
+            "scalaVersions": ["2.11", "2.12"]
+          }
+        ],
+        "compileTimeOnly": false
+      },
       {
         "name": "RosHTTP",
         "organization": "fr.hmil",
@@ -1176,10 +1189,7 @@
         "versions": [
           {
             "version": "2.2.3",
-            "scalaVersions": ["2.11", "2.12"]
           }
-        ],
-        "compileTimeOnly": false
       }
     ]
   }
