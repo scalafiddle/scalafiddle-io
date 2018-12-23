@@ -1189,6 +1189,7 @@
         "versions": [
           {
             "version": "2.2.3",
+            "scalaVersions": ["2.11", "2.12"]
           }
 	],
         "compileTimeOnly": false
