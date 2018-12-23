@@ -1180,7 +1180,19 @@
           }
         ],
         "compileTimeOnly": false
-      }	    
+      },
+      {
+        "name": "RosHTTP",
+        "organization": "fr.hmil",
+        "artifact": "roshttp",
+        "doc": "https://github.com/hmil/RosHTTP/blob/master/README.md",
+        "versions": [
+          {
+            "version": "2.2.3",
+          }
+	],
+        "compileTimeOnly": false
+      }
     ]
   }
 ]
