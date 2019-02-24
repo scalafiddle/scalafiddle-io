@@ -635,14 +635,6 @@
           {
             "version": "0.3.1",
             "scalaVersions": ["2.12"]
-          },
-          {
-            "version": "0.2.1",
-            "scalaVersions": ["2.12"]
-          },
-          {
-            "version": "0.1.5",
-            "scalaVersions": ["2.12"]
           }
         ],
         "compileTimeOnly": false
