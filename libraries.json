@@ -627,6 +627,19 @@
         "compileTimeOnly": false
       },
       {
+        "name": "Owlet",
+        "organization": "us.oyanglul",
+        "artifact": "owlet",
+        "doc": "https://oyanglul.us/owlet",
+        "versions": [
+          {
+            "version": "0.3.1",
+            "scalaVersions": ["2.12"]
+          }
+        ],
+        "compileTimeOnly": false
+      },
+      {
         "name": "Binding.scala",
         "organization": "com.thoughtworks.binding",
         "artifact": "binding",
