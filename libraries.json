@@ -743,6 +743,19 @@
           }
         ],
         "compileTimeOnly": false
+      },
+      {
+        "name": "bindable.scala",
+        "organization": "com.thoughtworks.binding",
+        "artifact": "bindable",
+        "doc": "ThoughtWorksInc/bindable.scala",
+        "versions": [
+          {
+            "version": "1.0.1",
+            "scalaVersions": ["2.11", "2.12"]
+          }
+        ],
+        "compileTimeOnly": false
       }
     ]
   },
