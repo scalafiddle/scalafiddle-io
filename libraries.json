@@ -974,7 +974,7 @@
         "doc": "akka-js/akka.js",
         "versions": [
           {
-            "version": "1.2.6.1",
+            "version": "2.2.6.1",
             "scalaVersions": ["2.12"]
           },
           {
@@ -1041,7 +1041,7 @@
         "doc": "akka-js/akka.js",
         "versions": [
           {
-            "version": "1.2.6.1",
+            "version": "2.2.6.1",
             "scalaVersions": ["2.12"]
           },
           {
@@ -1108,7 +1108,7 @@
         "doc": "akka-js/akka.js",
         "versions": [
           {
-            "version": "1.2.6.1",
+            "version": "2.2.6.1",
             "scalaVersions": ["2.12"]
           },
           {
@@ -1133,7 +1133,7 @@
         "doc": "akka-js/akka.js",
         "versions": [
           {
-            "version": "1.2.6.1",
+            "version": "2.2.6.1",
             "scalaVersions": ["2.12"]
           },
           {
