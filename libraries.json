@@ -9,6 +9,18 @@
         "doc": "https://slinky.shadaj.me",
         "versions": [
           {
+            "version": "0.6.3",
+            "scalaVersions": ["2.12"],
+            "extraDeps": [
+              "me.shadaj %%% slinky-web % 0.6.3"
+            ],
+            "jsDeps": [
+              "react % 16.9.0 % https://cdnjs.cloudflare.com/ajax/libs/react/16.9.0/umd/react.development.js",
+              "react-dom % 16.9.0 % https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.9.0/umd/react-dom.development.js"
+            ],
+            "example":"https://raw.githubusercontent.com/scalafiddle/scalafiddle-io/master/samples/slinky/0.4.3/todo.scala"
+          },
+          {
             "version": "0.5.0",
             "scalaVersions": ["2.12"],
             "extraDeps": [
@@ -41,6 +53,18 @@
         "artifact": "core",
         "doc": "japgolly/scalajs-react",
         "versions": [
+          {
+            "version": "1.4.2",
+            "scalaVersions": ["2.12"],
+            "extraDeps": [
+              "com.github.japgolly.scalajs-react %%% extra % 1.4.2"
+            ],
+            "jsDeps": [
+              "react % 16.7.0 % https://cdnjs.cloudflare.com/ajax/libs/react/16.7.0/umd/react.development.js",
+              "react-dom % 16.7.0 % https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.7.0/umd/react-dom.development.js"
+            ],
+			"example":"https://raw.githubusercontent.com/scalafiddle/scalafiddle-io/master/samples/scalajs-react/1.2/todo.scala"
+          },
           {
             "version": "1.2.0",
             "scalaVersions": ["2.11", "2.12"],
@@ -96,6 +120,10 @@
         "artifact": "diode",
         "doc": "https://diode.suzaku.io",
         "versions": [
+          {
+            "version": "1.1.5",
+            "scalaVersions": ["2.12"]
+          },
           {
             "version": "1.1.3",
             "scalaVersions": ["2.11", "2.12"]
@@ -263,6 +291,10 @@
         "doc": "https://github.com/raquo/Laminar",
         "versions": [
           {
+            "version": "0.7.2",
+            "scalaVersions": ["2.12"]
+          },
+          {
             "version": "0.7",
             "scalaVersions": ["2.12"]
           },
@@ -328,6 +360,10 @@
         "doc": "fthomas/refined",
         "versions": [
           {
+            "version": "0.9.10",
+            "scalaVersions": ["2.12"]
+          },
+          {
             "version": "0.9.0",
             "scalaVersions": ["2.11", "2.12"]
           },
@@ -371,6 +407,10 @@
         "doc": "https://typelevel.org/cats/",
         "versions": [
           {
+            "version": "2.1.0",
+            "scalaVersions": ["2.12"]
+          },
+          {
             "version": "1.3.1",
             "scalaVersions": ["2.11", "2.12"]
           },
@@ -388,10 +428,6 @@
           },
           {
             "version": "1.0.1",
-            "scalaVersions": ["2.11", "2.12"]
-          },
-          {
-            "version": "1.0.0-MF",
             "scalaVersions": ["2.11", "2.12"]
           },
           {
@@ -414,6 +450,10 @@
         "doc": "typelevel/cats-effect",
         "versions": [
           {
+            "version": "2.0.0",
+            "scalaVersions": ["2.12"]
+          },
+          {
             "version": "1.0.0",
             "scalaVersions": ["2.11", "2.12"]
           },
@@ -432,18 +472,22 @@
         ],
         "compileTimeOnly": false
       },
-      {	
-        "name": "Cats MTL",	
-        "organization": "org.typelevel",	
-        "artifact": "cats-mtl-core",	
-        "doc": "typelevel/cats-mtl",	
-        "versions": [	
-          {	
-            "version": "0.4.0",	
-            "scalaVersions": ["2.11", "2.12"]	
-          }	
-        ],	
-        "compileTimeOnly": false	
+      {
+        "name": "Cats MTL",
+        "organization": "org.typelevel",
+        "artifact": "cats-mtl-core",
+        "doc": "typelevel/cats-mtl",
+        "versions": [
+          {
+            "version": "0.7.0",
+            "scalaVersions": ["2.12"]
+          },
+          {
+            "version": "0.4.0",
+            "scalaVersions": ["2.11", "2.12"]
+          }
+        ],
+        "compileTimeOnly": false
       },
       {
         "name": "Scalaz",
@@ -451,6 +495,10 @@
         "artifact": "scalaz-core",
         "doc": "scalaz/scalaz",
         "versions": [
+          {
+            "version": "7.2.29",
+            "scalaVersions": ["2.12"]
+          },
           {
             "version": "7.2.16",
             "scalaVersions": ["2.11", "2.12"]
@@ -511,6 +559,10 @@
         "doc": "functional-streams-for-scala/fs2",
         "versions": [
           {
+            "version": "2.1.0",
+            "scalaVersions": ["2.12"]
+          },
+          {
             "version": "0.10.0-M7",
             "scalaVersions": ["2.11", "2.12"]
           },
@@ -536,6 +588,10 @@
         "doc": "https://monix.io/",
         "versions": [
           {
+            "version": "3.1.0",
+            "scalaVersions": ["2.12"]
+          },
+          {
             "version": "3.0.0-M1",
             "scalaVersions": ["2.11", "2.12"]
           },
@@ -556,6 +612,14 @@
         "artifact": "monocle-core",
         "doc": "https://julien-truffaut.github.io/Monocle/",
         "versions": [
+          {
+            "version": "2.0.0",
+            "scalaVersions": ["2.12"],
+            "extraDeps": [
+              "com.github.julien-truffaut %%% monocle-macro % 2.0.0",
+              "com.github.julien-truffaut %%% monocle-law % 2.0.0"
+            ]
+          },
           {
             "version": "1.5.0-cats-M1",
             "scalaVersions": ["2.11", "2.12"],
@@ -580,7 +644,7 @@
         "organization": "io.github.scala-hamsters",
         "artifact": "hamsters",
         "doc": "scala-hamsters/hamsters",
-        "versions": [          
+        "versions": [
 	  {
             "version": "2.6.0",
             "scalaVersions": ["2.11", "2.12"]
@@ -588,6 +652,22 @@
           {
             "version": "2.5.0",
             "scalaVersions": ["2.11", "2.12"]
+          }
+        ],
+        "compileTimeOnly": false
+      },
+      {
+        "name": "ZIO",
+        "organization": "dev.zio",
+        "artifact": "zio",
+        "doc": "https://zio.dev",
+        "versions": [
+          {
+            "version": "1.0.0-RC17",
+            "scalaVersions": ["2.12"],
+            "extraDeps": [
+              "dev.zio %%% zio-streams % 1.0.0-RC17"
+            ]
           }
         ],
         "compileTimeOnly": false
@@ -840,11 +920,15 @@
         "artifact": "upickle",
         "doc": "lihaoyi/upickle",
         "versions": [
-	  {
-	    "version": "0.7.1",
+          {
+            "version": "0.9.5",
+            "scalaVersions": ["2.12"]
+          },
+          {
+            "version": "0.7.1",
             "scalaVersions": ["2.11", "2.12"]
-	  },
-	  {
+          },
+          {
             "version": "0.6.6",
             "scalaVersions": ["2.11", "2.12"]
           },
@@ -873,6 +957,11 @@
         "artifact": "circe-core",
         "doc": "https://circe.github.io/circe",
         "versions": [
+          {
+            "version": "0.12.3",
+            "scalaVersions": ["2.12"],
+            "extraDeps": ["io.circe %%% circe-generic % 0.12.3", "io.circe %%% circe-parser % 0.12.3"]
+          },
           {
             "version": "0.9.1",
             "scalaVersions": ["2.11", "2.12"],
@@ -939,6 +1028,10 @@
         "artifact": "fastparse",
         "doc": "http://www.lihaoyi.com/fastparse/",
         "versions": [
+          {
+            "version": "2.2.2",
+            "scalaVersions": ["2.12"]
+          },
           {
             "version": "1.0.0",
             "scalaVersions": ["2.11", "2.12"]
@@ -1150,6 +1243,10 @@
         "doc": "scala-js/scala-js-java-time",
         "versions": [
           {
+            "version": "0.2.6",
+            "scalaVersions": ["2.12"]
+          },
+          {
             "version": "0.2.3",
             "scalaVersions": ["2.11", "2.12"]
           },
@@ -1174,6 +1271,10 @@
         "artifact": "quill-sql",
         "doc": "http://getquill.io/",
         "versions": [
+          {
+            "version": "3.5.0",
+            "scalaVersions": ["2.12"]
+          },
           {
             "version": "2.3.1",
             "scalaVersions": ["2.11", "2.12"]
