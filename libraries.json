@@ -559,6 +559,10 @@
         "doc": "functional-streams-for-scala/fs2",
         "versions": [
           {
+            "version": "2.2.1",
+            "scalaVersions": ["2.12"]
+          },          
+	  {
             "version": "2.1.0",
             "scalaVersions": ["2.12"]
           },
