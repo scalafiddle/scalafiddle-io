@@ -17,7 +17,7 @@ services:
       - APPLICATION_SECRET
       - SCALAFIDDLE_SQL_CONFIG=postgre
       - SCALAFIDDLE_COMPILER_URL=https://embed.scalafiddle.io
-      - SCALAFIDDLE_URL=https://scalafiddle.io      
+      - SCALAFIDDLE_URL=https://scalafiddle.io
       - GITHUB_CLIENT_ID
       - GITHUB_CLIENT_SECRET
       - SCALAFIDDLE_AUTH_URL=https://scalafiddle.io/authenticate
@@ -27,7 +27,7 @@ services:
       driver: gelf
       options:
         gelf-address: "udp://localhost:5000"
-      
+
   router:
     image: scalafiddle/scalafiddle-router:latest
     depends_on:
@@ -51,9 +51,9 @@ services:
       driver: gelf
       options:
         gelf-address: "udp://localhost:5000"
-      
-  compiler-2.12:
-    image: scalafiddle/scalafiddle-core-2.12:latest
+
+  compiler-2.12-sjs0.6:
+    image: scalafiddle/scalafiddle-core-2.12-sjs0.6:latest
     depends_on:
       - router
     restart: always
@@ -71,9 +71,9 @@ services:
       driver: gelf
       options:
         gelf-address: "udp://localhost:5000"
-      
-  compiler-2.11:
-    image: scalafiddle/scalafiddle-core-2.11:latest
+
+  compiler-2.12-sjs1:
+    image: scalafiddle/scalafiddle-core-2.12-sjs1:latest
     depends_on:
       - router
     restart: always
@@ -91,6 +91,26 @@ services:
       driver: gelf
       options:
         gelf-address: "udp://localhost:5000"
-      
+
+  compiler-2.11-sjs0.6:
+    image: scalafiddle/scalafiddle-core-2.11-sjs0.6:latest
+    depends_on:
+      - router
+    restart: always
+    volumes:
+      - sfdata:/data
+      - ./config/compiler/logback.xml:/app/config/logback.xml
+    environment:
+      - JAVA_OPTS=-Xmx3G
+      - SCALAFIDDLE_ROUTER_URL=ws://router:8880/compiler
+      - COURSIER_CACHE=/data/compiler/coursier
+      - SCALAFIDDLE_LIBCACHE=/data/compiler/extlibs
+      - SCALAFIDDLE_METRICS_STATSD_HOSTNAME=metrics
+      - SCALAFIDDLE_SECRET
+    logging:
+      driver: gelf
+      options:
+        gelf-address: "udp://localhost:5000"
+
 volumes:
   sfdata:
