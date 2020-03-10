@@ -1387,7 +1387,12 @@
           {
             "version": "2.0.4",
             "scalaVersions": ["2.11", "2.12"]
-          }
+          },
+	  {
+            "version": "1.5.2",
+            "organization": "com.softwaremill.sttp",
+            "scalaVersions": ["2.11", "2.12"]
+          }	
         ],
         "compileTimeOnly": false
       },
