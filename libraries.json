@@ -1380,12 +1380,12 @@
       },
       {
         "name": "sttp",
-        "organization": "com.softwaremill.sttp",
+        "organization": "com.softwaremill.sttp.client",
         "artifact": "core",
-        "doc": "https://sttp.readthedocs.io/en/latest/",
+        "doc": "https://sttp.softwaremill.com/",
         "versions": [
           {
-            "version": "1.5.2",
+            "version": "2.0.4",
             "scalaVersions": ["2.11", "2.12"]
           }
         ],
