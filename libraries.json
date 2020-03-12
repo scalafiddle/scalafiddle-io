@@ -961,6 +961,11 @@
         "artifact": "circe-core",
         "doc": "https://circe.github.io/circe",
         "versions": [
+	  {
+            "version": "0.13.3",
+            "scalaVersions": ["2.12"],
+            "extraDeps": ["io.circe %%% circe-generic % 0.13.0", "io.circe %%% circe-parser % 0.13.0"]
+          },	
           {
             "version": "0.12.3",
             "scalaVersions": ["2.12"],
@@ -1393,6 +1398,25 @@
             "organization": "com.softwaremill.sttp",
             "scalaVersions": ["2.11", "2.12"]
           }	
+        ],
+        "compileTimeOnly": false
+      },
+      {
+        "name": "sttp-circe",
+        "organization": "com.softwaremill.sttp.client",
+        "artifact": "circe",
+        "doc": "https://sttp.softwaremill.com/",
+        "versions": [
+          {
+            "version": "2.0.4",
+            "scalaVersions": ["2.12"],
+            "extraDeps": [
+	      "com.softwaremill.sttp.client %%% core % 2.0.4", 
+	      "io.circe %%% circe-core % 0.13.0", 
+	      "io.circe %%% circe-generic % 0.13.0", 
+	      "io.circe %%% circe-parser % 0.13.0"
+	    ]
+          }
         ],
         "compileTimeOnly": false
       },
