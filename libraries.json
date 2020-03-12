@@ -962,7 +962,7 @@
         "doc": "https://circe.github.io/circe",
         "versions": [
 	  {
-            "version": "0.13.3",
+            "version": "0.13.0",
             "scalaVersions": ["2.12"],
             "extraDeps": ["io.circe %%% circe-generic % 0.13.0", "io.circe %%% circe-parser % 0.13.0"]
           },	
