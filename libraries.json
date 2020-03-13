@@ -1391,33 +1391,20 @@
         "versions": [
           {
             "version": "2.0.4",
-            "scalaVersions": ["2.11", "2.12"]
+            "scalaVersions": ["2.12"],
+            "extraDeps": [
+	      "com.softwaremill.sttp.client %%% circe % 2.0.4", 
+	      "com.softwaremill.sttp.client %%% json-common % 2.0.4", 
+	      "io.circe %%% circe-core % 0.13.0", 
+	      "io.circe %%% circe-generic % 0.13.0", 
+	      "io.circe %%% circe-parser % 0.13.0"
+	    ]
           },
 	  {
             "version": "1.5.2",
             "organization": "com.softwaremill.sttp",
             "scalaVersions": ["2.11", "2.12"]
           }	
-        ],
-        "compileTimeOnly": false
-      },
-      {
-        "name": "sttp-circe",
-        "organization": "com.softwaremill.sttp.client",
-        "artifact": "circe",
-        "doc": "https://sttp.softwaremill.com/",
-        "versions": [
-          {
-            "version": "2.0.4",
-            "scalaVersions": ["2.12"],
-            "extraDeps": [
-	      "com.softwaremill.sttp.client %%% core % 2.0.4", 
-	      "com.softwaremill.sttp.client %%% json-common % 2.0.4", 
-	      "io.circe %%% circe-core % 0.13.0", 
-	      "io.circe %%% circe-generic % 0.13.0", 
-	      "io.circe %%% circe-parser % 0.13.0"
-	    ]
-          }
         ],
         "compileTimeOnly": false
       },
