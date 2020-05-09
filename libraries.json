@@ -1038,6 +1038,11 @@
         "doc": "http://www.lihaoyi.com/fastparse/",
         "versions": [
           {
+            "version": "2.2.4",
+            "scalaVersions": ["2.12"],
+            "scalaJSVersions": ["0.6", "1"]
+          },
+          {
             "version": "2.2.2",
             "scalaVersions": ["2.12"]
           },
@@ -1253,7 +1258,8 @@
         "versions": [
           {
             "version": "0.2.6",
-            "scalaVersions": ["2.12"]
+            "scalaVersions": ["2.11", "2.12"],
+            "scalaJSVersions": ["0.6", "1"]
           },
           {
             "version": "0.2.3",
