@@ -1017,7 +1017,21 @@
           }
         ],
         "compileTimeOnly": false
-      }
+      },
+      {
+        "name": "jsoniter-scala",
+        "organization": "com.github.plokhotnyuk.jsoniter-scala",
+        "artifact": "jsoniter-scala-macros",
+        "doc": "https://github.com/plokhotnyuk/jsoniter-scala",
+        "versions": [
+          {
+            "version": "2.2.3",
+            "scalaVersions": ["2.11", "2.12"],
+            "scalaJSVersions": ["1"]
+          }
+        ],
+        "compileTimeOnly": false
+      }	    
     ]
   },
   {
@@ -1431,7 +1445,21 @@
           }
         ],
         "compileTimeOnly": false
-      }
+      },
+      {
+        "name": "RTree2D",
+        "organization": "com.github.plokhotnyuk.rtree2d",
+        "artifact": "rtree2d-core",
+        "doc": "https://github.com/plokhotnyuk/rtree2d",
+        "versions": [
+          {
+            "version": "0.10.0",
+            "scalaVersions": ["2.11", "2.12"],
+            "scalaJSVersions": ["1"]
+          }
+        ],
+        "compileTimeOnly": false
+      }	    
     ]
   }
 ]
