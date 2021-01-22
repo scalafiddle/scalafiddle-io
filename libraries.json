@@ -3,6 +3,19 @@
     "group": "Web",
     "libraries": [
       {
+        "name": "html.scala",
+        "organization": "org.lrng.binding",
+        "artifact": "html",
+        "doc": "GlasslabGames/html.scala",
+        "versions": [
+          {
+            "version": "1.0.3",
+            "scalaVersions": ["2.11", "2.12", "2.13"]
+          }
+        ],
+        "compileTimeOnly": false
+      },
+      {
         "name": "Slinky",
         "organization": "me.shadaj",
         "artifact": "slinky-core",
