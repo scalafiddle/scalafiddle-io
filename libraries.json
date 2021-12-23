@@ -733,8 +733,12 @@
         "name": "OutWatch",
         "organization": "io.github.outwatch",
         "artifact": "outwatch",
-        "doc": "https://outwatch.github.io/?lang=scala",
+        "doc": "https://outwatch.github.io",
         "versions": [
+          {
+            "version": "1.0.0-RC4",
+            "scalaVersions": ["2.12", "2.13"]
+          },
           {
             "version": "0.10.2",
             "scalaVersions": ["2.11", "2.12"]
